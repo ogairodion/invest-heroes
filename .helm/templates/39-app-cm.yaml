@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config-1
+data:
+  {{- (.Files.Glob "conf/app/*").AsConfig | nindent 2 }}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config-2
+data:
+  {{- (.Files.Glob "conf/app/conf.d/*").AsConfig | nindent 2 }}
+---

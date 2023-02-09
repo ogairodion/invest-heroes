@@ -1,0 +1,635 @@
+section.prices.ru
+    .l-default
+        .prices__imgs
+            .prices__img
+                +webp(['prices/1', 'prices/1-1'], typeImg='png', lazy, alt, sizes=[{min: ['600']}, {max: ['600']}])
+            .prices__img
+                +webp(['prices/2', 'prices/2-1'], typeImg='png', lazy, alt, sizes=[{min: ['600']}, {max: ['600']}])
+    .prices__top.section-top
+        .l-default 
+            .section-top__info
+                .section-top__icon 
+                    img(src="img/svg/prices/prices.svg", alt="")
+                .section-top__description Тарифы
+                h2.prices__title.title.title--h2 <span>На наш</span> аналитический портал
+            .prices__tabs#prices
+                .prices__tab.active(data-category="ru") Подписка на Российский рынок
+                .prices__tab(data-category="us") Подписка на рынок США
+                .prices__tab(data-category="all") Подписка на все рынки
+    .l-default 
+        .prices__sliders-table(data-category="ru")
+            .prices__sliders-left
+                .prices__left-top
+                    .prices__left-title материалы,
+                    .prices__left-subtitle доступные по подписке
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Инвестидеи
+                    .prices__left-msg Инвест идеи - Мы находим интересные возможности для заработка, моделируем будущие прибыли компаний, и если получается фундаментальный потенциал - публикуем инвест идею с обоснованием нашей логики.
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Модельные портфели
+                    .prices__left-msg Модельные портфели - управляющие публикуют свои сделки в режиме онлайн, ориентируясь на которые Вы можете принимать решения по своему портфелю.
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Рекомендации по облигациям
+                    .prices__left-msg Рекомендации по облигациям - консервативные инвестора найдут возможности для размещения кэша с низкими рисками, но приемлемыми доходностями (выше ОФЗ)
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Отчёты по компаниям
+                    .prices__left-msg Отчеты по компаниям - мы публикуем ежемесячные обзоры ключевых отраслей по российскому рынку, оцениваем влияние новых трендов на справедливые цены акций, прогнозируем будущие финрезультаты компаний по операционным отчетам и обновляем оценки после МСФО отчетов. В каждом материале мы объясняем, что произошло, как это влияет на компанию, и к какой новой фундаментальной цене мы пришли.
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Доступ к Телеграм-боту
+                    .prices__left-msg Доступ в закрытый телеграм канал - все материалы дублируются на портале на сайте и в мессенджере Телеграмм. Вы будете оперативно получать информацию о новых отчетах, идеях, сделках и других событиях!
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Поддержка в Телеграм-боте
+                    .prices__left-msg Ответы на вопросы - команда аналитиков и управляющие будут отвечать на ваши вопросы по отчетам, событиям в анализируемых активах, нашим инвест идеям и сделкам в течение суток
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Вебинары Invest Heroes
+                    .prices__left-msg Вебинары - Мы проводим большие стратегические вебинары несколько раз в год, в рамках которых разбираем ключевые тренды и делаем выводы, как оптимально позиционировать свой портфель.
+                .prices__left-bottom Итого
+            .prices__sliders
+                .prices__sliders-nav
+                    .prices__sliders-nav--item Start
+                    .prices__sliders-nav--item Standart
+                    .prices__sliders-nav--item Invest heroes
+                .prices__slider.swiper-container
+                    .prices__slider-wrapper.swiper-wrapper
+                        .prices__slide.swiper-slide(id="start" data-price-kz="45500" data-price-ru="5000")
+                            .prices__slide-top
+                                .prices__slide-title START
+                                .prices__slide-subtitle 3 месяца
+                            .prices__slide-row.prices__left-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                    .prices__left-msg Инвест идеи - Мы находим интересные возможности для заработка, моделируем будущие прибыли компаний, и если получается фундаментальный потенциал - публикуем инвест идею с обоснованием нашей логики.
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Рекомендации по облигациям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-icon
+                            .prices__slide-bottom
+                                .prices__slide-price 
+                                .prices__slide-price--us 
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=2&rate=3") Выбрать
+                        .prices__slide.swiper-slide(id="standart" data-price-kz="49000" data-price-ru="5500")
+                            .prices__slide-top
+                                .prices__slide-title STANDART
+                                .prices__slide-subtitle 6 месяцев
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Рекомендации по облигациям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="2000" data-price-kz="17500")
+                                    .prices__btn
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Вебинары Invest Heroes
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="1000" data-price-kz="10500")
+                                    .prices__btn
+                            .prices__slide-bottom
+                                .prices__slide-price
+                                .prices__slide-price--us
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=2&rate=11") Выбрать
+                        .prices__slide.swiper-slide(id="invest" data-price-kz="87500" data-price-ru="10000")
+                            .prices__slide-top
+                                .prices__slide-title INVEST HEROES
+                                .prices__slide-subtitle 12 месяцев
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Рекомендации по облигациям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row  
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-kz="35000" data-price-ru="4000")
+                                    .prices__btn
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Вебинары Invest Heroes
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-kz="17500" data-price-ru="2000")
+                                    .prices__btn
+                            .prices__slide-bottom
+                                .prices__slide-price
+                                .prices__slide-price--us
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=2&rate=13") Выбрать
+        .prices__sliders-table.hidden(data-category="us")
+            .prices__sliders-left
+                .prices__left-top
+                    .prices__left-title материалы,
+                    .prices__left-subtitle доступные по подписке
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Инвестидеи
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Модельные портфели
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Отчёты по компаниям
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Доступ к Телеграм-боту
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Поддержка в Телеграм-боте
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Вебинары Invest Heroes
+                .prices__left-bottom Итого
+            .prices__sliders
+                .prices__sliders-nav
+                    .prices__sliders-nav--item Start
+                    .prices__sliders-nav--item Standart
+                    .prices__sliders-nav--item Invest heroes
+                .prices__slider.swiper-container
+                    .prices__slider-wrapper.swiper-wrapper
+                        .prices__slide.swiper-slide(id="start" data-price-ru="7000" data-price-kz="49000")
+                            .prices__slide-top
+                                .prices__slide-title START
+                                .prices__slide-subtitle 3 месяца
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели\
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row  
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                            .prices__slide-bottom
+                                .prices__slide-price
+                                .prices__slide-price--us
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=44&rate=84") Выбрать
+                        .prices__slide.swiper-slide(id="standart" data-price-ru="8000" data-price-kz="56000")
+                            .prices__slide-top
+                                .prices__slide-title STANDART
+                                .prices__slide-subtitle 6 месяцев
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="2000" data-price-kz="17500")
+                                    .prices__btn
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Вебинары Invest Heroes
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="1000" data-price-kz="10500")
+                                    .prices__btn
+                            .prices__slide-bottom
+                                .prices__slide-price
+                                .prices__slide-price--us
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=2&rate=68") Выбрать
+                        .prices__slide.swiper-slide(id="invest" data-price-ru="10000" data-price-kz="105000")
+                            .prices__slide-top
+                                .prices__slide-title INVEST HEROES
+                                .prices__slide-subtitle 12 месяцев
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="4000" data-price-kz="35000")
+                                    .prices__btn
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Вебинары Invest Heroes
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="2000" data-price-kz="17500")
+                                    .prices__btn
+                            .prices__slide-bottom
+                                .prices__slide-price
+                                .prices__slide-price--us
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=2&rate=65") Выбрать
+        .prices__sliders-table.hidden(data-category="all")
+            .prices__sliders-left
+                .prices__left-top
+                    .prices__left-title материалы,
+                    .prices__left-subtitle доступные по подписке
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Инвестидеи
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Модельные портфели
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Рекомендации по облигациям
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Отчёты по компаниям
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Доступ к Телеграм-боту
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Поддержка в Телеграм-боте
+                .prices__left-row
+                    .prices__left-icon
+                        img.prices__left-img(src="img/svg/prices/question.svg", alt="")
+                    .prices__left-text Вебинары Invest Heroes
+                .prices__left-bottom Итого
+            .prices__sliders
+                .prices__sliders-nav
+                    .prices__sliders-nav--item Start
+                    .prices__sliders-nav--item Standart
+                    .prices__sliders-nav--item Invest heroes
+                .prices__slider.swiper-container
+                    .prices__slider-wrapper.swiper-wrapper
+                        .prices__slide.swiper-slide(id="start" data-price-ru="10000" data-price-kz="80500")
+                            .prices__slide-top
+                                .prices__slide-title START
+                                .prices__slide-subtitle 3 месяца
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Рекомендации по облигациям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-icon
+                            .prices__slide-bottom
+                                .prices__slide-price
+                                .prices__slide-price--us
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=2&rate=83") Выбрать
+                        .prices__slide.swiper-slide(id="standart" data-price-ru="12000" data-price-kz="94500")
+                            .prices__slide-top
+                                .prices__slide-title STANDART
+                                .prices__slide-subtitle 6 месяцев
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Рекомендации по облигациям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="2500" data-price-kz="35000")
+                                    .prices__btn
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Вебинары Invest Heroes
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="1500" data-price-kz="14000")
+                                    .prices__btn
+                            .prices__slide-bottom
+                                .prices__slide-price
+                                .prices__slide-price--us
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=2&rate=78") Выбрать
+                        .prices__slide.swiper-slide(id="invest" data-price-ru="20000" data-price-kz="182000")
+                            .prices__slide-top
+                                .prices__slide-title INVEST HEROES
+                                .prices__slide-subtitle 12 месяцев
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Инвестидеи
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Модельные портфели
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Рекомендации по облигациям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Отчёты по компаниям
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Доступ к Телеграм-боту
+                                .prices__slide-icon
+                                    img(src="img/svg/prices/check.svg", alt="")
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Поддержка в Телеграм-боте
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="4000" data-price-kz="49000")
+                                    .prices__btn
+                            .prices__slide-row
+                                .prices__slide-row--left
+                                    .prices__left-icon
+                                        img(src="img/svg/prices/question.svg", alt="")
+                                    .prices__left-text Вебинары Invest Heroes
+                                .prices__slide-icon
+                                    input.prices__checkbox(type="checkbox" data-price-ru="2500" data-price-kz="24500")
+                                    .prices__btn
+                            .prices__slide-bottom
+                                .prices__slide-price
+                                .prices__slide-price--us
+                                a.prices__slide-btn.btn.btn--orange(href="/order?content=2&rate=75") Выбрать
+

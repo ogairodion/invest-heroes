@@ -1,0 +1,201 @@
+.subscription {
+    position: relative;
+    .section-top {
+        transform: translateY(0);
+        margin-bottom: 250px;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 200px;
+        }
+        &:before {
+            z-index: 1;
+            width: 48%;
+            transform: skew(50deg);
+        }
+        &:after {
+            @media screen and (max-width: 600px) {
+                right: -34%;
+                padding-right: 25%;
+            }
+        }
+        &__info {
+            padding-top: 220px;
+            @media screen and (max-width: 600px) {
+                padding-top: 150px;
+            }
+        }
+
+        &__icon {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__top {
+        &-img {
+            position: absolute;
+            top: -240px;
+            right: 0;
+            @media screen and (max-width: 1199px) {
+                top: -200px;
+            }
+            @media screen and (max-width: 359px) {
+                width: 55%;
+            }
+        }
+    }
+
+    &__wrapper {
+        &-info {
+            width: 50%;
+            @media screen and (max-width: 600px) {
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    &__item {
+        animation: show .4s ease;
+        margin-bottom: 140px;
+        &-icon {
+            width: 32px;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 600px) {
+                width: 26px;
+            }
+        }
+
+        &-title {
+            font-size: 30px;
+            line-height: 120%;
+            font-weight: 900;
+            margin-bottom: 15px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 20px;
+            }
+        }
+
+        &-text {
+            font-size: 17px;
+            line-height: 120%;
+            font-weight: 400;
+            @media screen and (max-width: 600px) {
+                font-size: 15px;
+            }
+            p {
+                margin: 0 0 15px;
+
+                @media screen and (max-width: 600px) {
+                    margin: 0 0 10px;
+                }
+            }
+        }
+    }
+
+    &__tel {
+        @media screen and (max-width: 600px) {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        &-wrapper {
+            width: 378px !important;
+            margin-left: auto;
+
+            @media screen and (max-width: 600px) {
+                width: 100% !important;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+
+        &-slider {
+            position: relative;
+            width: 378px;
+            height: 652px;
+            margin-bottom: 24px;
+            padding: 0 38px;
+            @media screen and (max-width: 1499px) {
+                width: 250px;
+                height: 430px;   
+                padding: 0 28px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: url('.././img/subscription/iphone.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        }
+
+        &-btn {
+            margin: 0 auto;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .swiper-slide {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 38px;
+        overflow: hidden;
+        background: #fff;
+        @media screen and (max-width: 1499px) {
+            border-radius: 20px;
+        }
+
+        img {
+            width: 90%;
+            height: 90%;
+            margin: 0 auto;
+        }
+    }
+   .is-sticky {
+        width: 378px !important;
+        left: 0;
+        right: 0 !important;
+        
+    }
+
+    .swiper-wrapper {
+        background: #fff;
+        border-radius: 20px;
+        height: 96%;
+        margin-top: 8px;
+
+        @media screen and (max-width: 1499px) {
+            height: 100%;
+            margin-top: 0;
+        }
+    }
+
+    .slider-arrows {
+        display: none;
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+    }
+
+    .slider-arrow {
+        width: 23px;
+        height: 23px;
+    }
+}

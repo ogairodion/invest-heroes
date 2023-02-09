@@ -1,0 +1,148 @@
+extends layouts/default
+include helpers/_mixins
+
+block variables
+  - const title = "INVEST HEROES"
+
+block content
+      include ../blocks/modules/header/header.pug
+      include ../blocks/modules/header/header-authorized.pug
+      .arrow-up.hidden
+        img(src="img/svg/arrow-up.svg", alt="")
+      main.main 
+        include ../blocks/modules/main-top/main-top.pug
+        include ../blocks/modules/service/service.pug
+        include ../blocks/modules/false/false.pug
+        include ../blocks/modules/subscription/subscription.pug
+        include ../blocks/modules/work/work.pug
+        include ../blocks/modules/stocks/stocks.pug
+        include ../blocks/modules/pre-images/pre-images.pug
+        include ../blocks/modules/raitings/raitings.pug
+        include ../blocks/modules/about/about.pug
+        include ../blocks/modules/team/team.pug
+        include ../blocks/modules/statistics/statistics.pug
+        include ../blocks/modules/prices/prices.pug
+        include ../blocks/modules/questions/questions.pug
+        include ../blocks/modules/bottom/bottom.pug
+      include ../blocks/modules/footer/footer.pug
+      include ../blocks/modules/popups/popups.pug
+
+block scripts
+  script(src="js/vendor.js")
+  script(src="js/main.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js")
+  script.
+    let config = {
+        type: 'line',
+        data: {
+            labels: ['2020-01-01', '2020-02-01', '2020-03-01', '2020-04-01'],
+            datasets: [{
+                label: "indiana",
+                backgroundColor: '#FF5745',
+                borderColor: '#FF5745',
+                data: [
+                    0, 4, 6, 6
+                ],
+                fill: false,
+            }, {
+                label: "index",
+                backgroundColor: '#333E63',
+                borderColor: '#333E63',
+                data: [
+                    2, 4, 3, 4
+                ],
+                fill: false,
+            }]
+        },
+        options: {
+            responsive: true,
+            tooltips: false,
+            layout: {
+                padding: 5
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    ticks: {
+                        display: false
+                    },
+                    gridLines: {
+                        display: false
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    ticks: {
+                        display: false
+                    },
+                    gridLines: {
+                        display: false
+                    }
+                }]
+            },
+            legend: {
+                display: false
+            },
+        }
+    };
+
+    const ctxRu = document.getElementById('chart-ru');
+    window.chartRu = new Chart(ctxRu, config);
+
+    config = {
+        type: 'line',
+        data: {
+            labels: ['2020-01-01', '2020-02-01', '2020-03-01', '2020-04-01'],
+            datasets: [{
+                label: "indiana",
+                backgroundColor: '#FF5745',
+                borderColor: '#FF5745',
+                data: [
+                    0, 4, 6, 6
+                ],
+                fill: false,
+            }, {
+                label: "index",
+                backgroundColor: '#333E63',
+                borderColor: '#333E63',
+                data: [
+                    2, 4, 3, 4
+                ],
+                fill: false,
+            }]
+        },
+        options: {
+            responsive: true,
+            tooltips: false,
+            layout: {
+                padding: 5
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    ticks: {
+                        display: false
+                    },
+                    gridLines: {
+                        display: false
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    ticks: {
+                        display: false
+                    },
+                    gridLines: {
+                        display: false
+                    }
+                }]
+            },
+            legend: {
+                display: false
+            },
+        }
+    };
+
+    const ctxUSA = document.getElementById('chart-usa');
+    window.chartUs = new Chart(ctxUSA, config);
+    

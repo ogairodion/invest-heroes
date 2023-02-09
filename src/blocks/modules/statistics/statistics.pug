@@ -1,0 +1,46 @@
+section.statistics
+    .statistics__top.section-top
+        .l-default 
+            .section-top__info
+                .section-top__icon 
+                    img(src="img/svg/statistics/thumbs-up.svg", alt="")
+                h2.statistics__title.title.title--h2 <span>Статистика</span> в цифрах
+    .statistics__tabs
+        .l-default
+            .statistics__tabs-wrapper
+                .statistics__tab.active(data-category="ru") Акции РФ
+                .statistics__tab(data-category="us") Акции США
+            .statistics__items(data-category="ru")
+                .statistics__items-canvas
+                    <canvas id="chart-ru">
+                .statistics__texts
+                    .statistics__text   
+                        .statistics__text-info
+                            .statistics__text-title Результаты флагманской стратегии Сергея
+                            ul
+                                li с 2018 года: 202%
+                                li с начала года: 34.5%
+                    .statistics__text
+                        .statistics__text-info
+                            .statistics__text-title Результаты индекса
+                            ul
+                                li с 2018 года: (-14%)
+                                li с начала года: (-48.7%)
+                //- a.statistics__btn.btn.btn--white(href="") Детальная статистика
+            .statistics__items.hidden(data-category="us")
+                .statistics__items-canvas
+                    <canvas id="chart-usa">
+                .statistics__texts
+                    .statistics__text   
+                        .statistics__text-info
+                            .statistics__text-title Результаты флагманской стратегии Сергея
+                            ul
+                                li с начала года: (-3%)
+                                li с начала года: (-24%)
+                    .statistics__text
+                        .statistics__text-info
+                            .statistics__text-title Результаты индекса
+                            ul
+                                li с 2020: 24%
+                                li с 2020: 2%
+                //- a.statistics__btn.btn.btn--white(href="") Детальная статистика

@@ -1,0 +1,22 @@
+section.stocks
+    .l-default
+        .stocks__top-imgs
+            .stocks__top-img
+                +webp(['work/3'], 'png')
+            .stocks__top-img
+                +webp(['work/4', 'work/4-1'], typeImg='png', lazy, alt, sizes=[{min: ['600']}, {max: ['600']}])
+    .stocks__content
+        .stocks__top.section-top
+            .l-default 
+                .section-top__info
+                    .section-top__icon 
+                        img(src="img/svg/stocks/planet.svg", alt="")
+                    h2.stocks__title.title.title--h2 Наше <span>покрытие акций</span>
+        .stocks__wrapper 
+            .l-default 
+                include ../../components/stocks-image/stocks-image.pug
+                include ../../components/stocks-image/stocks-image-mobile.pug
+                .stocks__more
+                    .stocks__more-title.title.title--h2 И еще <span>более 60</span> компаний
+                    .stocks__more-text в подписке
+                

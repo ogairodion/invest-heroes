@@ -1,0 +1,13 @@
+extends ../layouts/default
+include ../helpers/_mixins
+
+block variables
+  - const title = "Страница 404 ошибки"
+
+block content
+  include ../../blocks/modules/header/header.pug
+  include ../../blocks/modules/footer/footer.pug
+
+block scripts
+  script(defer src="./js/vendor.js")
+  script(defer src="./js/main.js")

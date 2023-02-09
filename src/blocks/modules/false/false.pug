@@ -1,0 +1,49 @@
+-
+    const false_items = [
+        {
+            icon: "1",
+            title: "Покупал бумаги",
+            text: "без понимания их стоимости и перспектив"
+        },
+        {
+            icon: "2",
+            title: "Делал ставку на пару активов",
+            text: "плохо диверсифицировал портфель"
+        },
+        {
+            icon: "3",
+            title: "Не понимал рисков",
+            text: "финансового актива и пересиживал убыток"
+        },
+        {
+            icon: "4",
+            title: "Изначальная идея заняться инвестированием",
+            text: "не имела за собой никакой долгосрочной цели"
+        },
+        {
+            icon: "5",
+            title: "Покупал активы, у которых падала цена",
+            text: "такие активы далеко не всегда принесут прибыль"
+        },
+        {
+            icon: "6",
+            title: "Заложил мало времени",
+            text: "и слишком рано стал оценивать доходность портфеля"
+        }
+    ]
+
+section.false
+    .l-default 
+        .false__top
+            .false__icon 
+                img.lazy(data-src="img/svg/stop.svg", alt="")
+            h2.false__title.title.title--h2 <span>Ошибки</span> начинающего инвестора
+        .false__items
+            each false_item in false_items
+                .false__item
+                    .false__item-icon
+                        img.lazy(data-src="img/svg/false/" + false_item.icon + ".svg", alt="")
+                    .false__item-title= false_item.title
+                    .false__item-text= false_item.text
+        .false__bottom  
+            +webp(['false/bottom', 'false/bottom-1'], typeImg='png', lazy='lazy', alt, sizes=[{min: ['1199']}, {max: ['1199']}])

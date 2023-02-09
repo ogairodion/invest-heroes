@@ -1,0 +1,19 @@
+include team-data.pug
+
+section.team
+    .l-default
+        .team__slider.swiper-container  
+            .swiper-wrapper 
+                each team_item in team
+                    .team__slide.swiper-slide
+                        .team__slide-img
+                            +webp(['team/' + team_item.img], typeImg="jpg")
+                        .team__slide-name= team_item.name
+                        .team__slide-description= team_item.description
+            .swiper-scrollbar
+    .l-default
+        .team__imgs
+            .team__img
+                +webp(['team/bottom/1', 'team/bottom/1-1'], typeImg='png', lazy='lazy', alt, sizes=[{min: ['600']}, {max: ['600']}])
+            .team__img
+                +webp(['team/bottom/2', 'team/bottom/2-1'], typeImg='png', lazy='lazy', alt, sizes=[{min: ['600']}, {max: ['600']}])

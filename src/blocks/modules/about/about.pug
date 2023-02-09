@@ -1,0 +1,72 @@
+include about-data.pug
+
+section.about.section.section
+    .about__top.section-top
+        .l-default 
+            .section-top__info
+                .section-top__icon 
+                    img(src="img/svg/about/star.svg", alt="")
+                .about__description Отзывы
+                h2.about__title.title.title--h2 О нашем <span>портале</span>
+    .l-default 
+        .about__sliders
+            .about__slider.about__slider-main.swiper-container
+                .swiper-wrapper
+                    each about_review in about_reviews 
+                        .about__slide.swiper-slide
+                            .about__slide-top
+                                .about__slide-img   
+                                    - if (about_review.img && about_review.img !== '')
+                                        +webp(['about/' + about_review.img], 'jpg')
+                                    - else 
+                                        +svgMono('user')
+                                .about__slide-info
+                                    .about__slide-name= about_review.name
+                                    .about__slide-description= about_review.description
+                            .about__slide-review
+                                .about__slide-icons.about__review-icons
+                                    .about__review-icon
+                                        +svgMono('star')
+                                    .about__review-icon
+                                        +svgMono('star')
+                                    .about__review-icon
+                                        +svgMono('star')
+                                    .about__review-icon
+                                        +svgMono('star')
+                                    .about__review-icon
+                                        +svgMono('star')
+                                - if (about_review.title)
+                                    .about__slide-title.about__review-title= about_review.title 
+                                .about__slide-text.about__review-text!= about_review.text  
+            .slider-arrows
+                .slider-arrow.slider-arrow-prev
+                    img.lazy(data-src="img/svg/about/arrow-circle.svg", alt="")
+                .slider-arrow.slider-arrow-next
+                    img.lazy(data-src="img/svg/about/arrow-circle.svg", alt="")
+            .about__slider.about__slider-secondary
+                .about__reviews.swiper-container
+                    .swiper-wrapper
+                        each about_review in about_reviews
+                            .about__review.swiper-slide
+                                .about__review-icons
+                                    .about__review-icon
+                                        +svgMono('star')
+                                    .about__review-icon
+                                        +svgMono('star')
+                                    .about__review-icon
+                                        +svgMono('star')
+                                    .about__review-icon
+                                        +svgMono('star')
+                                    .about__review-icon
+                                        +svgMono('star')
+                                .about__review-title= about_review.title
+                                .about__review-text!= about_review.text
+        .about__btn.btn.btn--more.btn--orange Показать еще
+    .about__bottom
+        .l-default
+            .about__bottom-imgs
+                .about__bottom-img
+                    +webp(['about/bottom/1', 'about/bottom/1-1'], typeImg='png', lazy='lazy', alt, sizes=[{min: ['600']}, {max: ['600']}])
+                .about__bottom-img
+                    +webp(['about/bottom/2', 'about/bottom/2-1'], typeImg='png', lazy='lazy', alt, sizes=[{min: ['600']}, {max: ['600']}])
+

@@ -1,0 +1,56 @@
+-
+    const service_slider = [
+        {
+            img: "1",
+            title: "Знакомьтесь, это Сергей",
+            text: "<p>У него есть сбережения, и он хочет их приумножить. Раньше Сергей хранил деньги на депозите, но через 2 года закрыл вклад.</p>"
+        },
+        {
+            img: "2",
+            title: "В приложении своего банка он открыл инвестиционный счет",
+            text: "<p>Ему хочется, чтобы деньги работали на него, а инвестирование выглядит интересной идеей. Решил начать с небольшой суммы.</p>"
+        },
+        {
+            img: "3",
+            title: "Сергей попробовал купить несколько акций",
+            text: "<p>Выбрал их по рекомендациям, и за полгода его счет неплохо подрос. Позднее Сергей снова воспользовался рекомендациями, но в этот раз ушел в минус.</p>"
+        },
+        {
+            img: "4",
+            title: "Он решил разобраться в работе рынков",
+            text: "<p>Подписался на блогеров, каналы в Telegram и YouTube про рынки и акции и быстро осознал, что единого мнения нет — все говорят разное.</p>"
+        },
+        {
+            img: "5",
+            title: "В итоге год инвестирования привел к минусу и разочарованию",
+        }
+    ]
+
+section.service.section.section-blue.section-blue-main
+    .service__top.section-top
+        .l-default 
+            .section-top__info
+                h2.service__title.title.title--h2 Здесь мы могли бы начать расхваливать свой сервис,
+                .service__subtitle но вместо этого  просто расскажем вам историю одного Инвестора
+    .service__content
+        .l-default 
+            .service__slider.swiper-container
+                .swiper-wrapper
+                    each service_slide in service_slider
+                        .service__slide.swiper-slide
+                            .service__slide-img 
+                                +webp(['service/' + service_slide.img], 'png', 'swiper-lazy')
+                            .service__slide-info
+                                .service__slide-title= service_slide.title 
+                                - if (service_slide.text)
+                                    .service__slide-text!= service_slide.text
+                .slider-arrows
+                    .slider-arrow.slider-arrow-prev
+                        img.lazy(data-src="img/svg/arrow.svg", alt="")
+                    .slider-arrow.slider-arrow-next
+                        img.lazy(data-src="img/svg/arrow.svg", alt="")
+                .slider-pagination.swiper-pagination
+    .section-bottom
+        .l-default
+            .service__bottom 
+                +webp(['service/bottom', 'service/bottom-1'], typeImg='png', lazy, alt, sizes=[{min: ['1199']}, {max: ['1199']}])

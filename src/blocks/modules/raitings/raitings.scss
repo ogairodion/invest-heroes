@@ -1,0 +1,117 @@
+.raitings {
+    padding-bottom: 34px;
+    .section-top {
+        &__info {
+            padding-top: 80px;
+
+            @media screen and (max-width: 600px) {
+                padding-top: 40px;
+            }
+        }
+
+        &:before {
+                @media screen and (max-width: 1599px) {
+                    width: 50%;
+                }
+                @media screen and (max-width: 1599px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 600px) {
+                    width: 62%;
+                }
+        }
+
+        &:after {
+            @media screen and (max-width: 600px) {
+                right: -18%;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 330px) {
+            font-size: 16px;
+        }
+    }
+
+    &__description {
+        font-size: 20px;
+        line-height: 120%;
+        font-weight: 400;
+
+        @media screen and (max-width: 600px) {
+            font-size: 15px;
+        }
+    }
+
+    &__top {
+        &-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        &-icon {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        margin: 0 -20px;
+
+        @media screen and (max-width: 1199px) {
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 600px) {
+            flex-wrap: wrap;
+            margin: 0;
+        }
+    }
+
+    &__item {
+        width: calc(50% - 40px);
+        margin: 0 20px;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            margin: 0 0 20px;
+        }
+
+        &-icon {
+            width: 40px;
+            margin: 0 auto;
+            margin-bottom: 26px;
+
+            @media screen and (max-width: 1199px) {
+                width: 30px;
+            }
+        }
+
+        &-title {
+            font-size: 20px;
+            line-height: 120%;
+            font-weight: 900;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 16px;
+            }
+        }
+
+        &-text {
+            font-size: 17px;
+            line-height: 120%;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

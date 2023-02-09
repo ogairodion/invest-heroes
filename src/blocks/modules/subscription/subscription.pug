@@ -1,0 +1,77 @@
+-
+    const subscription_items = [
+        {
+            icon: "1",
+            title: "Аналитика акций",
+            text: "<p>Изучаем финансовые отчеты 120 компаний на российском и американском рынках, на их основе прогнозируем целевые цены и даем рекомендации по каждой компании на будущий год</p>"
+        },
+        {
+            icon: "2",
+            title: "Подборки по облигациям под любые цели",
+            text: "<p>Отбираем самые перспективные бумаги и еженедельно обновляем список.</p><p>Подборки дают возможность инвестировать краткосрочно, а также выделить долю, которой не хотите рисковать, под оптимальную ставку доходности с учетом рисков</p>"
+        },
+        {
+            icon: "3",
+            title: "Инвестиционные идеи",
+            text: "<p>Проводим фундаментальный анализ, прогнозируем доходность, рекомендуем доли.</p><p>Объясняем, какие акции сейчас интересны к покупке и почему, указываем, по какой цене и на каком горизонте мы собираемся выходить из идеи. Эти идеи регулярно обновляются по мере выхода отчетности компаний или появления важных событий. Вы можете собрать полноценный портфель из инвестидей</p>"
+        },
+        {
+            icon: "4",
+            title: "Готовые портфели",
+            text: "<p>Наш управляющий выбирает самые перспективные идеи и на их основе формирует портфели, которые может повторить даже начинающий с небольшим капиталом.</p><p>Есть как агрессивные, так и консервативные стратегии. Обо всех сделках мы сообщаем в режиме online</p>"
+        },
+        {
+            icon: "5",
+            title: "Вебинары от профи",
+            text: "<p>Наши старшие аналитики и управляющий расскажут, на какие типы и классы активов стоит выделить большую долю в портфеле, и объяснят, с какими трендами это связано</p><p>Активная ребалансировка портфеля дает возможность обгонять рынок</p>"
+        },
+        {
+            icon: "6",
+            title: "Поддержка и помощь",
+            text: "<p>В рамках тарифа с Поддержкой можно задать любой вопрос нашим аналитикам и управляющему по компаниям, акциям и облигациям на выбранном вами рынке</p>"
+        }
+    ]
+section.subscription.section.section-blue
+    .subscription__top.section-top
+        .l-default 
+            .subscription__top-img 
+                +webp(['subscription/top', 'subscription/top-2'],  typeImg='png', lazy='', alt, sizes=[{min: ['1199']}, {max: ['1199']}])
+            .section-top__info
+                .section-top__icon 
+                    img.lazy(data-src="img/svg/subscription/cube.svg", alt="")
+                h2.subscription__title.title.title--h2 Что входит <span>в подписку</span>
+    .subscription__wrapper(data-sticky-container)
+        .l-default
+            .subscription__content.sticky-wrapper
+                .subscription__wrapper-info
+                        .subscription__items
+                            each subscription_item in subscription_items
+                                .subscription__item
+                                    .subscription__item-icon
+                                        img(src="img/svg/subscription/" + subscription_item.icon + ".svg", alt="")
+                                    .subscription__item-title= subscription_item.title
+                                    .subscription__item-text!= subscription_item.text
+                .subscription__tel-wrapper
+                    .l-default
+                        .slider-arrows
+                            .slider-arrow.slider-arrow-prev
+                                img.lazy(data-src="img/svg/arrow.svg", alt="")
+                            .slider-arrow.slider-arrow-next
+                                img.lazy(data-src="img/svg/arrow.svg", alt="")
+                        .subscription__tel.sticky(data-sticky-class="is-sticky" data-margin-top="124"  data-margin-bottom="40" data-sticky-for="600") 
+                            .subscription__tel-slider.swiper-container
+                                .swiper-wrapper     
+                                    .swiper-slide
+                                        +webp(['subscription/1'], 'png')
+                                    .swiper-slide
+                                        +webp(['subscription/2'], 'png')
+                                    .swiper-slide
+                                        +webp(['subscription/3'], 'png')
+                                    .swiper-slide
+                                        +webp(['subscription/4'], 'png')
+                                    .swiper-slide
+                                        +webp(['subscription/5'], 'png')
+                                    .swiper-slide
+                                        +webp(['subscription/6'], 'png')
+                            a.subscription__tel-btn.btn.btn--orange.scroll(href="#prices") Подписаться
+                        
